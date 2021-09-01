@@ -13,7 +13,7 @@
         
 >
 
-    
+
 
     <Border CornerRadius="20" BorderThickness="8">
 
@@ -47,6 +47,7 @@
             <Button x:Name="btnMinimize" Content="" HorizontalAlignment="Left" Margin="1206,10,0,0" VerticalAlignment="Top" Width="20" Click="btnMinimize_Click" Background="#FF04FF81" BorderBrush="#FF008300"/>
             <Button x:Name="btnLegacy" Content="" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" Width="79" Click="btnLegacy_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
             <Button x:Name="btnCommunity" Content="" HorizontalAlignment="Left" Margin="305,10,0,0" VerticalAlignment="Top" Width="79" Click="btnQuit_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
+            <Image HorizontalAlignment="Left" Height="354" Margin="305,152,0,166" VerticalAlignment="Center" Width="355" Source="toolclip1.png" Grid.Row="1"/>
 
 
         </Grid>
