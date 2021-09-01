@@ -45,7 +45,7 @@ namespace WazoTool
             //Create an object from the legacy tab window
             //Then show it while hiding mainwindow
             Legacy uusilegacy = new Legacy();
-            mainWindow.TransformToAncestor(uusilegacy);
+            //mainWindow.TransformToAncestor(uusilegacy);
             uusilegacy.Show();
             mainWindow.Hide();
             //
