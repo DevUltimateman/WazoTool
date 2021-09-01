@@ -19,9 +19,10 @@
 
         <Border.BorderBrush>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#FFF0069B" Offset="0.0"/>
-                <GradientStop Color="#FF9500A4" Offset="0.5"/>
-                <GradientStop Color="#FF140C46" Offset="1.0"/>
+                <GradientStop Color="#FFF0069B" Offset="1"/>
+                <GradientStop Color="#FF9500A4" Offset="0.749"/>
+                <GradientStop Color="#FF140C46"/>
+                <GradientStop Color="#FFBB179F" Offset="0.915"/>
             </LinearGradientBrush>
 
         </Border.BorderBrush>
@@ -36,18 +37,49 @@
 
             <Grid.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#FFF0069B" Offset="0.0"/>
-                    <GradientStop Color="#FF9500A4" Offset="0.5"/>
-                    <GradientStop Color="#FF140C46" Offset="1.0"/>
+                    <GradientStop Color="#FFF0069B" Offset="1"/>
+                    <GradientStop Color="#FF9500A4" Offset="0.749"/>
+                    <GradientStop Color="#FF140C46"/>
+                    <GradientStop Color="#FFBB179F" Offset="0.915"/>
 
                 </LinearGradientBrush>
 
             </Grid.Background>
             <Button x:Name="btnQuit" Content="" HorizontalAlignment="Left" Margin="1234,10,0,0" VerticalAlignment="Top" Width="20" Click="btnQuit_Click" Background="Red" BorderBrush="#FF6A0000"/>
             <Button x:Name="btnMinimize" Content="" HorizontalAlignment="Left" Margin="1206,10,0,0" VerticalAlignment="Top" Width="20" Click="btnMinimize_Click" Background="#FF04FF81" BorderBrush="#FF008300"/>
-            <Button x:Name="btnLegacy" Content="" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" Width="79" Click="btnLegacy_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
-            <Button x:Name="btnCommunity" Content="" HorizontalAlignment="Left" Margin="305,10,0,0" VerticalAlignment="Top" Width="79" Click="btnQuit_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
-            <Image HorizontalAlignment="Left" Height="354" Margin="305,152,0,166" VerticalAlignment="Center" Width="355" Source="toolclip1.png" Grid.Row="1"/>
+            <Button x:Name="btnLegacy" Content="Legacy Mods" HorizontalAlignment="Left" Margin="142,0,0,0" VerticalAlignment="Top" Width="97" Click="btnLegacy_Click" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="354" Margin="203,164,0,154" VerticalAlignment="Center" Width="355" Source="toolclip1.png" Grid.Row="1"/>
+            <Button x:Name="btnCommunity" Content="Legacy Mods" HorizontalAlignment="Left" Margin="253,0,0,0" VerticalAlignment="Top" Width="97" BorderBrush="#FFF0069B" Height="32" BorderThickness="2" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            <Button x:Name="btnLegacy_Copy" Content="WazoTool" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Top" Width="96" Click="btnLegacy_Click" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            <TextBlock x:Name="txtblockMain1" FontFamily="Bahnschrift Heavy" HorizontalAlignment="Left" Margin="563,387,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="502" Foreground="White"><Run Text="Wazotool is a fan made tool made to work with Plutonium T6 Mods."/><LineBreak/><Run Text="Goal of this tool is to help you, the end user to modify your gaming experience more easily."/><LineBreak/></TextBlock>
+            <TextBlock x:Name="txtBlockMain2" FontFamily="Bahnschrift Heavy" HorizontalAlignment="Left" Margin="563,419,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="502" Foreground="White" Text="Browse through &quot;Legacy Mods&quot; to find mods created by Ultimateman or head over to &quot;Community Mods&quot; tab to find out mods created by the community."/>
+            <TextBlock x:Name="txtBlockWazo" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="55" HorizontalAlignment="Left" Margin="563,248,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="502" Foreground="White" Text="Wazo"/>
+            <TextBlock x:Name="txtBlockT6Customization" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="38" HorizontalAlignment="Left" Margin="563,301,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="502" Foreground="White" Text="Plutonium T6 Customization"/>
+            <TextBlock x:Name="txtBlockMadeEasy" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="38" HorizontalAlignment="Left" Margin="563,338,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="502" Foreground="White" Text="Made easy."/>
+            <Button x:Name="btnDiscord" Content="Discord" HorizontalAlignment="Left" Margin="1065,610,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF41005F" BorderBrush="#FF41005F" Foreground="#FFFFFAFF" Click="btnDiscord_Click"/>
+            <Button x:Name="btnMute" Content="Mute" HorizontalAlignment="Left" Margin="1145,610,0,0" Grid.Row="1" VerticalAlignment="Top" Width="41" Background="#FF01E6C7" BorderBrush="#FF01E6C7" Foreground="#FF41005F" FontWeight="Bold"/>
+            <Label x:Name="lblRcopyUltimateman"  Content="©Ultimateman / 2021" HorizontalAlignment="Left" Margin="1058,635,0,0" Grid.Row="1" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="Microsoft JhengHei" FontWeight="Bold" Height="23"/>
 
 
         </Grid>

@@ -13,6 +13,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+using System.Web;
+using System.IO;
+using System.Diagnostics;
+using System.Threading;
+using System.Windows.Threading;
+
 namespace WazoTool
 {
     
@@ -49,6 +56,16 @@ namespace WazoTool
             uusilegacy.Show();
             mainWindow.Hide();
             //
+        }
+
+        private void btnDiscord_Click(object sender, RoutedEventArgs e)
+        {
+            //Discord link & command executes
+            var tiscord = new ProcessStartInfo("https://discord.gg/8bzK5Hu");
+            tiscord.UseShellExecute = true;
+            tiscord.Verb = "open";
+
+            Process.Start(tiscord);
         }
     }
 }
