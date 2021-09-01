@@ -28,7 +28,7 @@ namespace WazoTool
         public MainWindow()
         {
             InitializeComponent();
-            Legacy legacy = new Legacy();
+            //Legacy legacy = new Legacy();
             
         }
 
@@ -66,6 +66,16 @@ namespace WazoTool
             tiscord.Verb = "open";
 
             Process.Start(tiscord);
+        }
+
+        private void btnCommunity_Click(object sender, RoutedEventArgs e)
+        {
+            //Create an object for new community window
+            Community uusicommunity = new Community();
+            uusicommunity.Tran
+            uusicommunity.Show();
+            mainWindow.Hide();
+
         }
     }
 }
