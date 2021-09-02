@@ -1,12 +1,59 @@
-﻿<Window x:Class="WazoTool.Community"
+﻿
+<Window x:Name="communityWindow" x:Class="WazoTool.Community"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WazoTool"
         mc:Ignorable="d"
-        Title="Community" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="720" Width="1280"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        >
+
+
+
+
+
+
+    <Border CornerRadius="20" BorderThickness="8">
+
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FFF0069B" Offset="1"/>
+                <GradientStop Color="#FF9500A4" Offset="0.749"/>
+                <GradientStop Color="#FF140C46"/>
+                <GradientStop Color="#FFBB179F" Offset="0.915"/>
+            </LinearGradientBrush>
+
+        </Border.BorderBrush>
+
+        <Grid x:Name="grdBackground">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#FFF0069B" Offset="1"/>
+                    <GradientStop Color="#FF9500A4" Offset="0.749"/>
+                    <GradientStop Color="#FF140C46"/>
+                    <GradientStop Color="#FFBB179F" Offset="0.915"/>
+
+                </LinearGradientBrush>
+
+            </Grid.Background>
+
+
+
+        </Grid>
+    </Border>
+
+
 </Window>

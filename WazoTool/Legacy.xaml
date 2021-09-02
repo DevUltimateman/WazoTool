@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WazoTool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280"
+        Title="LegacyWindow" Height="720" Width="1280"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
-        
->
+        >
+
+
+    
 
 
 
@@ -46,13 +48,34 @@
                 </LinearGradientBrush>
 
             </Grid.Background>
-            <Button x:Name="btnQuit" Content="" HorizontalAlignment="Left" Margin="1234,10,0,0" VerticalAlignment="Top" Width="20" Click="btnQuit_Click" Background="Red" BorderBrush="#FF6A0000"/>
-            <Button x:Name="btnMinimize" Content="" HorizontalAlignment="Left" Margin="1206,10,0,0" VerticalAlignment="Top" Width="20" Click="btnMinimize_Click" Background="#FF04FF81" BorderBrush="#FF008300"/>
-            <Button x:Name="btnLegacy" Content="" HorizontalAlignment="Left" Margin="221,10,0,0" VerticalAlignment="Top" Width="79" Click="btnLegacy_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
-            <Button x:Name="btnCommunity" Content="" HorizontalAlignment="Left" Margin="305,10,0,0" VerticalAlignment="Top" Width="79" Click="btnQuit_Click" Background="#FF4F2268" BorderBrush="#00008300"/>
-            <Button x:Name="btnMainPage" Content="" HorizontalAlignment="Left" Margin="619,10,0,0" VerticalAlignment="Top" Width="79" Click="btnMainPage_Click" Background="#FFFFC500" BorderBrush="#00008300"/>
-            <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="1010,518,0,0" Grid.Row="1" VerticalAlignment="Top" Width="107" Height="28"/>
-            <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="622,518,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Height="28"/>
+            <Button x:Name="btnQuit" Content="" HorizontalAlignment="Left" Margin="1234,10,0,0" VerticalAlignment="Top" Width="20" Background="Red" BorderBrush="#FF6A0000" Click="btnQuit_Click"/>
+            <Button x:Name="btnLegacyMinimize" Content="" HorizontalAlignment="Left" Margin="1206,10,0,0" VerticalAlignment="Top" Width="20" Background="#FF04FF81" BorderBrush="#FF008300" Click="btnLegacyMinimize_Click"/>
+            <Button x:Name="btnLegacy" Content="Legacy Mods" HorizontalAlignment="Left" Margin="142,0,0,0" VerticalAlignment="Top" Width="97" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            
+            <Button x:Name="btnCommunity" Content="Community Mods" HorizontalAlignment="Left" Margin="253,0,0,0" VerticalAlignment="Top" Width="124" BorderBrush="#FFF0069B" Height="32" BorderThickness="2" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            <Button x:Name="btnWazoMain" Content="WazoTool" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Top" Width="96" Click="btnWazoMain_Click" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+                <Button.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Foreground>
+            </Button>
+            
 
 
         </Grid>

@@ -11,7 +11,9 @@
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True" Background="{x:Null}"
         
->
+        
+        
+        >
 
 
 
@@ -64,7 +66,7 @@
                     </LinearGradientBrush>
                 </Button.Foreground>
             </Button>
-            <Button x:Name="btnLegacy_Copy" Content="WazoTool" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Top" Width="96" Click="btnLegacy_Click" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
+            <Button x:Name="btnWazoMain" Content="WazoTool" HorizontalAlignment="Left" Margin="32,0,0,0" VerticalAlignment="Top" Width="96" Click="btnWazoMain_Click" BorderBrush="#FFF0069B" BorderThickness="2"  Height="32" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="14" Background="#00000000">
                 <Button.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -77,9 +79,11 @@
             <TextBlock x:Name="txtBlockWazo" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="55" HorizontalAlignment="Left" Margin="563,248,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="502" Foreground="White" Text="Wazo"/>
             <TextBlock x:Name="txtBlockT6Customization" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="38" HorizontalAlignment="Left" Margin="563,301,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="502" Foreground="White" Text="Plutonium T6 Customization"/>
             <TextBlock x:Name="txtBlockMadeEasy" FontFamily="Bahnschrift Heavy" FontWeight="Bold" FontSize="38" HorizontalAlignment="Left" Margin="563,338,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="502" Foreground="White" Text="Made easy."/>
-            <Button x:Name="btnDiscord" Content="Discord" HorizontalAlignment="Left" Margin="1065,610,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF41005F" BorderBrush="#FF41005F" Foreground="#FFFFFAFF" Click="btnDiscord_Click"/>
-            <Button x:Name="btnMute" Content="Mute" HorizontalAlignment="Left" Margin="1145,610,0,0" Grid.Row="1" VerticalAlignment="Top" Width="41" Background="#FF01E6C7" BorderBrush="#FF01E6C7" Foreground="#FF41005F" FontWeight="Bold"/>
-            <Label x:Name="lblRcopyUltimateman"  Content="©Ultimateman / 2021" HorizontalAlignment="Left" Margin="1058,635,0,0" Grid.Row="1" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="Microsoft JhengHei" FontWeight="Bold" Height="23"/>
+            <Button x:Name="btnDiscord" Content="Discord" HorizontalAlignment="Left" Margin="1066,583,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF41005F" BorderBrush="#FF41005F" Foreground="#FFFFFAFF" Click="btnDiscord_Click"/>
+            <Button x:Name="btnMute" Content="Mute" HorizontalAlignment="Left" Margin="1146,583,0,0" Grid.Row="1" VerticalAlignment="Top" Width="41" Background="#FF01E6C7" BorderBrush="#FF01E6C7" Foreground="#FF41005F" FontWeight="Bold"/>
+            <Label x:Name="lblRcopyUltimateman"  Content="©Ultimateman / 2021" HorizontalAlignment="Left" Margin="1057,636,0,0" Grid.Row="1" VerticalAlignment="Top" Width="142" Foreground="White" FontFamily="Microsoft JhengHei" FontWeight="Bold" Height="26"/>
+            <Label x:Name="lblRuntime"  Content="App Runtime:" HorizontalAlignment="Left" Margin="1056,608,0,0" Grid.Row="1" VerticalAlignment="Top" Width="90" Foreground="White" FontFamily="Microsoft JhengHei" FontWeight="Bold" Height="28"/>
+            <Label x:Name="lblTime"  Content="" HorizontalAlignment="Left" Margin="1146,608,0,0" Grid.Row="1" VerticalAlignment="Top" Width="80" Foreground="White" FontFamily="Microsoft JhengHei" Height="28"/>
 
 
         </Grid>
